@@ -14,6 +14,9 @@ const Navbar: React.FC = () => {
         <NavLink to="/skills" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Skills
         </NavLink>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">
+          Resume
+        </a>
       </div>
     </nav>
   );
