@@ -120,6 +120,12 @@
   }
 }
 
+.experience-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .experience-image-container {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -129,6 +135,23 @@
 }
 
 .experience-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.secondary-media-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.experience-video,
+.experience-gif {
   width: 100%;
   height: 100%;
   object-fit: cover;

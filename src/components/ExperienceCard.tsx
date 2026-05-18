@@ -8,8 +8,30 @@ interface ExperienceCardProps {
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <div className="experience-card">
-      <div className="experience-image-container">
-        <img src={experience.imagePlaceholder} alt={experience.title} className="experience-image" />
+      <div className="experience-media">
+        <div className="experience-image-container">
+          <img src={experience.imagePlaceholder} alt={experience.title} className="experience-image" />
+        </div>
+        {experience.secondaryMedia && (
+          <div className="secondary-media-container">
+            {experience.secondaryMedia.endsWith('.mp4') ? (
+              <video 
+                src={experience.secondaryMedia} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="experience-video"
+              />
+            ) : (
+              <img 
+                src={experience.secondaryMedia} 
+                alt={`${experience.title} demo`} 
+                className="experience-gif" 
+              />
+            )}
+          </div>
+        )}
       </div>
       <div className="experience-content">
         <h3>{experience.title}</h3>

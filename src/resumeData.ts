@@ -7,6 +7,7 @@ export interface Experience {
   skills: string[];
   description: string[];
   imagePlaceholder?: string;
+  secondaryMedia?: string;
 }
 
 export interface SkillCategory {
@@ -40,7 +41,8 @@ export const resumeData = {
         "Developed downloadable content system for skins and a major undisclosed alternate game mode.",
         "Optimized and ported the game into Nintendo Switch 1 and 2 and other consoles."
       ],
-      imagePlaceholder: "/pictures/nicktoons_dice.png"
+      imagePlaceholder: "/pictures/nicktoons_dice.png",
+      secondaryMedia: "/pictures/nicktoons_dice.mp4"
     },
     {
       title: "Pakinpaks",
@@ -53,7 +55,8 @@ export const resumeData = {
         "Responsible for all technical art and optimization of the game, including support for low-end modes using mobile rendering techniques.",
         "Created all visual effects and materials for the game."
       ],
-      imagePlaceholder: "/pictures/pakinpaks.png"
+      imagePlaceholder: "/pictures/pakinpaks.png",
+      secondaryMedia: "/pictures/pakinpaks.mp4"
     },
     {
       title: "Miraculous - Paris Under Siege",
@@ -67,7 +70,8 @@ export const resumeData = {
         "Developed both playable characters alongside with all their traversing and combat mechanics.",
         "Optimized and ported the game into Nintendo Switch and other consoles."
       ],
-      imagePlaceholder: "/pictures/miraculous.png"
+      imagePlaceholder: "/pictures/miraculous.png",
+      secondaryMedia: "/pictures/miraculous.mp4"
     },
     {
       title: "DreamWorks Trolls Remix Rescue",
@@ -83,7 +87,8 @@ export const resumeData = {
         "Designed several levels for the game.",
         "Optimized and ported the game into Nintendo Switch and other consoles."
       ],
-      imagePlaceholder: "/pictures/trolls_remix_rescue.png"
+      imagePlaceholder: "/pictures/trolls_remix_rescue.png",
+      secondaryMedia: "/pictures/trolls_remix_rescue.mp4"
     },
     {
       title: "Gamble Tower",
@@ -95,7 +100,8 @@ export const resumeData = {
         "Responsible for the entire programming of this project, with highlights being procedurally generated characters, floors, challenges, combats.",
         "As the lead game designer, making the game well-rounded and balanced was one of my responsibilities as well."
       ],
-      imagePlaceholder: "/pictures/gamble_tower.png"
+      imagePlaceholder: "/pictures/gamble_tower.png",
+      secondaryMedia: "/pictures/gamble_tower.mp4"
     },
     {
       title: "Nickelodeon Kart Racers 3",
@@ -107,7 +113,8 @@ export const resumeData = {
         "Worked on multiple visual effects and shaders for the game.",
         "Focused on the development of VFX for trailers and cinematic movies."
       ],
-      imagePlaceholder: "/pictures/kart_racers_3.png"
+      imagePlaceholder: "/pictures/kart_racers_3.png",
+      secondaryMedia: "/pictures/kart_racers_3.mp4"
     },
     {
       title: "Kukoos: Lost Pets",
@@ -121,7 +128,8 @@ export const resumeData = {
         "Developed a plethora of particle systems and special effects for other bosses, characters and mechanics.",
         "Worked on the porting for all platforms, but specially for Nintendo Switch."
       ],
-      imagePlaceholder: "/pictures/kukoos.png"
+      imagePlaceholder: "/pictures/kukoos.png",
+      secondaryMedia: "/pictures/kukoos.mp4"
     },
     {
       title: "ADVULTRA",
@@ -133,7 +141,8 @@ export const resumeData = {
         "Developed the entire game from scratch and published it on Play Store.",
         "(No longer available, but there are videos on YouTube)"
       ],
-      imagePlaceholder: "/pictures/advultra.png"
+      imagePlaceholder: "/pictures/advultra.png",
+      secondaryMedia: "/pictures/advultra.mp4"
     }
   ],
   skills: [
