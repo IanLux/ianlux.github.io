@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import type { Experience } from '../resumeData';
 
 interface ExperienceCardProps {
@@ -6,17 +6,53 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
+  const [secondaryMedia, setSecondaryMedia] = useState<{ url: string; type: 'video' | 'image' } | null>(null);
+
+  useEffect(() => {
+    const checkMedia = async () => {
+      if (!experience.imagePlaceholder) return;
+
+      // Extract base path without extension (e.g., /pictures/pakinpaks)
+      const basePath = experience.imagePlaceholder.substring(0, experience.imagePlaceholder.lastIndexOf('.'));
+      
+      const mp4Path = `${basePath}.mp4`;
+      const gifPath = `${basePath}.gif`;
+
+      try {
+        // Try MP4 first
+        const mp4Res = await fetch(mp4Path, { method: 'HEAD' });
+        if (mp4Res.ok) {
+          setSecondaryMedia({ url: mp4Path, type: 'video' });
+          return;
+        }
+
+        // Try GIF second
+        const gifRes = await fetch(gifPath, { method: 'HEAD' });
+        if (gifRes.ok) {
+          setSecondaryMedia({ url: gifPath, type: 'image' });
+          return;
+        }
+      } catch (err) {
+        console.error("Error checking secondary media:", err);
+      }
+      
+      setSecondaryMedia(null);
+    };
+
+    checkMedia();
+  }, [experience.imagePlaceholder]);
+
   return (
     <div className="experience-card">
       <div className="experience-media">
         <div className="experience-image-container">
           <img src={experience.imagePlaceholder} alt={experience.title} className="experience-image" />
         </div>
-        {experience.secondaryMedia && (
+        {secondaryMedia && (
           <div className="secondary-media-container">
-            {experience.secondaryMedia.endsWith('.mp4') ? (
+            {secondaryMedia.type === 'video' ? (
               <video 
-                src={experience.secondaryMedia} 
+                src={secondaryMedia.url} 
                 autoPlay 
                 loop 
                 muted 
@@ -25,7 +61,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
               />
             ) : (
               <img 
-                src={experience.secondaryMedia} 
+                src={secondaryMedia.url} 
                 alt={`${experience.title} demo`} 
                 className="experience-gif" 
               />
