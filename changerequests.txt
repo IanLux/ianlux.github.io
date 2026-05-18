@@ -1,7 +1,11 @@
-- Remove the icon from "Ian Francesco Doles de Toledo", and change the title to "Ian Doles - Gameplay Programmer"
-- Remove the "Senior Game Developer" subtitle and leave the "About Me" section without a heading, it should be right below the title mentioned above.
-- Change the color scheme to Dark gray and greenish cyan
-- Right below the title add the button: View Projects (which moves you to the Experience page)
-- Change the "Experience" page to "Portfolio"
-- Pick the images for each one of my Experiences (Portfolio page) inside the "pictures" folder
-- Remove "SAGA" from Portfolio, and also make sure that the pictures are always in the same 16:9-ish shape, you may scale (without stretching) the images if necessary
+- The background is still too dark, can we make it a bit of a lighter gray?
+- Add an icon for the page and display on the left side of "Home" on the top, use pageicon.png
+- The same icon should show up right next to the page title
+- Change "Contact & Socials" buttons to use icons instead of text.
+- Make all pages have my name on the top (e.g. Ian FDT - Portfolio, Ian FDT - Skills)
+- Make sure my contacts always appear (email and linkedin)
+- Remove my GitHub from contacts
+- Instead of it being a separate page, make Resume part of my contacts
+- The Contacts section should be anchored alongside the navbar, it can be right below it.
+- My name can be smaller and be anchored alongside the "contacts" part.
+- Change "Home" to "About", and add a round picture of me in there (ianphoto.png)
