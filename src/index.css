@@ -1,13 +1,13 @@
 :root {
   --text: #b0b0b0;
   --text-h: #ffffff;
-  --bg: #121212;
+  --bg: #1c1c1c;
   --border: #333333;
-  --code-bg: #1e1e1e;
+  --code-bg: #252525;
   --accent: #00f5d4;
   --accent-bg: rgba(0, 245, 212, 0.1);
   --accent-border: rgba(0, 245, 212, 0.5);
-  --social-bg: #1e1e1e;
+  --social-bg: #252525;
   --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 

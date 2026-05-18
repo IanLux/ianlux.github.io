@@ -6,7 +6,10 @@ const SkillsPage: React.FC = () => {
   return (
     <div className="page skills-page">
       <section className="content-section">
-        <h1>Skills & Expertise</h1>
+        <div className="page-header">
+          <img src="/pageicon.png" alt="Icon" />
+          <h1>Ian FDT - Skills</h1>
+        </div>
         <div className="skills-container">
           {resumeData.skills.map((category, index) => (
             <div key={index} className="skill-category-section">

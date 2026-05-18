@@ -5,8 +5,11 @@ const Navbar: React.FC = () => {
   return (
     <nav id="navbar">
       <div className="nav-container">
+        <div className="nav-logo">
+          <img src="/pageicon.png" alt="Logo" />
+        </div>
         <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-          Home
+          About
         </NavLink>
         <NavLink to="/portfolio" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Portfolio
@@ -14,9 +17,6 @@ const Navbar: React.FC = () => {
         <NavLink to="/skills" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           Skills
         </NavLink>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">
-          Resume
-        </a>
       </div>
     </nav>
   );
