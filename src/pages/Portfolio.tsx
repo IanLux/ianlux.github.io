@@ -2,11 +2,11 @@ import React from 'react';
 import { resumeData } from '../resumeData';
 import ExperienceCard from '../components/ExperienceCard';
 
-const ExperiencePage: React.FC = () => {
+const PortfolioPage: React.FC = () => {
   return (
-    <div className="page experience-page">
+    <div className="page portfolio-page">
       <section className="content-section">
-        <h1>Professional History</h1>
+        <h1>Portfolio</h1>
         <div className="experience-list">
           {resumeData.experience.map((exp, index) => (
             <ExperienceCard key={index} experience={exp} />
@@ -17,4 +17,4 @@ const ExperiencePage: React.FC = () => {
   );
 };
 
-export default ExperiencePage;
+export default PortfolioPage;

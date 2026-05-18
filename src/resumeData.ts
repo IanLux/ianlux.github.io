@@ -16,7 +16,7 @@ export interface SkillCategory {
 
 export const resumeData = {
   personalInfo: {
-    name: "Ian Francesco Doles de Toledo",
+    name: "Ian Doles - Gameplay Programmer",
     email: "iandoles@gmail.com",
     phone: "55+ (15) 98181-5512",
     linkedin: "https://www.linkedin.com/in/ian-doles-a5491316b/",
@@ -40,7 +40,7 @@ export const resumeData = {
         "Developed downloadable content system for skins and a major undisclosed alternate game mode.",
         "Optimized and ported the game into Nintendo Switch 1 and 2 and other consoles."
       ],
-      imagePlaceholder: "Nicktoons & The Dice of Destiny"
+      imagePlaceholder: "/pictures/nicktoons_dice.png"
     },
     {
       title: "Pakinpaks",
@@ -53,7 +53,7 @@ export const resumeData = {
         "Responsible for all technical art and optimization of the game, including support for low-end modes using mobile rendering techniques.",
         "Created all visual effects and materials for the game."
       ],
-      imagePlaceholder: "Pakinpaks"
+      imagePlaceholder: "/pictures/pakinpaks.png"
     },
     {
       title: "Miraculous - Paris Under Siege",
@@ -67,7 +67,7 @@ export const resumeData = {
         "Developed both playable characters alongside with all their traversing and combat mechanics.",
         "Optimized and ported the game into Nintendo Switch and other consoles."
       ],
-      imagePlaceholder: "Miraculous - Paris Under Siege"
+      imagePlaceholder: "/pictures/miraculous.png"
     },
     {
       title: "DreamWorks Trolls Remix Rescue",
@@ -83,7 +83,7 @@ export const resumeData = {
         "Designed several levels for the game.",
         "Optimized and ported the game into Nintendo Switch and other consoles."
       ],
-      imagePlaceholder: "DreamWorks Trolls Remix Rescue"
+      imagePlaceholder: "/pictures/trolls_remix_rescue.png"
     },
     {
       title: "Gamble Tower",
@@ -95,7 +95,7 @@ export const resumeData = {
         "Responsible for the entire programming of this project, with highlights being procedurally generated characters, floors, challenges, combats.",
         "As the lead game designer, making the game well-rounded and balanced was one of my responsibilities as well."
       ],
-      imagePlaceholder: "Gamble Tower"
+      imagePlaceholder: "/pictures/gamble_tower.png"
     },
     {
       title: "Nickelodeon Kart Racers 3",
@@ -107,7 +107,7 @@ export const resumeData = {
         "Worked on multiple visual effects and shaders for the game.",
         "Focused on the development of VFX for trailers and cinematic movies."
       ],
-      imagePlaceholder: "Nickelodeon Kart Racers 3"
+      imagePlaceholder: "/pictures/kart_racers_3.png"
     },
     {
       title: "Kukoos: Lost Pets",
@@ -121,7 +121,7 @@ export const resumeData = {
         "Developed a plethora of particle systems and special effects for other bosses, characters and mechanics.",
         "Worked on the porting for all platforms, but specially for Nintendo Switch."
       ],
-      imagePlaceholder: "Kukoos: Lost Pets"
+      imagePlaceholder: "/pictures/kukoos.png"
     },
     {
       title: "ADVULTRA",
@@ -133,19 +133,7 @@ export const resumeData = {
         "Developed the entire game from scratch and published it on Play Store.",
         "(No longer available, but there are videos on YouTube)"
       ],
-      imagePlaceholder: "ADVULTRA"
-    },
-    {
-      title: "Game Development Teacher (SAGA)",
-      role: "Teacher",
-      company: "School of Art, Game and Animation (SAGA)",
-      period: "August 2019 - August 2020",
-      skills: ["Unreal Engine 4", "Blueprints", "ZBrush", "Autodesk Maya", "Adobe Photoshop", "Substance Painter", "Git"],
-      description: [
-        "Teached the students several game development softwares such as Unreal Engine, Autodesk Maya, Substance Painter and Pixologic ZBrush.",
-        "Responsible for managing students' projects until the end of the course, as well as helping with the delivery."
-      ],
-      imagePlaceholder: "SAGA"
+      imagePlaceholder: "/pictures/advultra.png"
     }
   ],
   skills: [

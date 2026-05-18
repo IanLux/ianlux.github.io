@@ -1,0 +1,7 @@
+- Remove the icon from "Ian Francesco Doles de Toledo", and change the title to "Ian Doles - Gameplay Programmer"
+- Remove the "Senior Game Developer" subtitle and leave the "About Me" section without a heading, it should be right below the title mentioned above.
+- Change the color scheme to Dark gray and greenish cyan
+- Right below the title add the button: View Projects (which moves you to the Experience page)
+- Change the "Experience" page to "Portfolio"
+- Pick the images for each one of my Experiences (Portfolio page) inside the "pictures" folder
+- Remove "SAGA" from Portfolio, and also make sure that the pictures are always in the same 16:9-ish shape, you may scale (without stretching) the images if necessary

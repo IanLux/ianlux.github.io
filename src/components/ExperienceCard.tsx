@@ -8,8 +8,8 @@ interface ExperienceCardProps {
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   return (
     <div className="experience-card">
-      <div className="experience-image-placeholder">
-        {experience.imagePlaceholder}
+      <div className="experience-image-container">
+        <img src={experience.imagePlaceholder} alt={experience.title} className="experience-image" />
       </div>
       <div className="experience-content">
         <h3>{experience.title}</h3>

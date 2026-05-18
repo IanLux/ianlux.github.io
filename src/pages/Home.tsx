@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { resumeData } from '../resumeData';
-import heroImg from '../assets/hero.png';
 
 const Home: React.FC = () => {
   const { personalInfo } = resumeData;
@@ -8,19 +8,13 @@ const Home: React.FC = () => {
   return (
     <div className="page home-page">
       <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="Ian Francesco" />
-        </div>
         <div>
           <h1>{personalInfo.name}</h1>
-          <p className="subtitle">Senior Game Developer</p>
+          <Link to="/portfolio" className="btn-primary">View Projects</Link>
         </div>
       </section>
 
-      <div className="ticks"></div>
-
       <section id="about" className="content-section">
-        <h2>About Me</h2>
         {personalInfo.aboutMe.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
